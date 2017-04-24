@@ -3,11 +3,12 @@
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css">
 	<link rel="stylesheet" href="css/buttons.css">
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-</head>
-<body>
 	<style>
 		html {
 			font-size: 100%;
+		}
+		table {
+			background-color: #fafafa;
 		}
 		tr:first-child {
 			font-size: 0.9rem;
@@ -22,26 +23,63 @@
 		section {
 			margin-top: 60px;
 		}
+		.page-header{
+			color: #666;
+			background-color: #eff4f9;
+		}
+		.page{
+			color: #333;
+			background-color: #fafafa;
+		}
 	</style>
+	<script>
+		$(document).ready(function(){
+			$('#style-helper div').hide('fast');
+			$('#style-helper div#page').show('medium');
+			$('#background-switch')
+			.change(function() {
+				var t = $('table').removeClass('page-header').removeClass('page').removeClass('inverse');
+				if(this.value==='#header'){
+					t.addClass('page-header');
+					$('#style-helper div').hide('fast');
+					$('#style-helper div#header').show('fast');
+				} else if(this.value==='#page'){
+					t.addClass('page');
+					$('#style-helper div').hide('fast');
+					$('#style-helper div#page').show('fast');
+				} else if(this.value==='#footer'){
+					t.addClass('inverse');
+					$('#style-helper div').hide('fast');
+					$('#style-helper div#footer').show('fast');
+				}
+			})
+		});
+	</script>	
+</head>
+<body>
 	<div class="container">
-		<div class="page-header"><h1>Buttons</h1></div>
+		<div class="page-header" style="background: transparent"><h1>Buttons</h1></div>
 		<section>
 			<label>Inverse Background</label>
-			<input type="checkbox" id="background-switch"></input>
-			<div id="style" class="inverse">
-				background-color: #2f3c48;<br>
-				color: #cae4fb;
-			</div>
-			<script>
-				$(document).ready(function(){
-					$('#style').hide();
-					$('#background-switch')
-					.change(function() {
-						$('table').toggleClass('inverse', this.checked);
-						$('#style').toggle('medium');
-					})
-				});
-			</script>
+			<select id="background-switch">
+				<option value="#header">Header</option>
+				<option value="#page" selected>Page</option>
+				<option value="#footer">Footer</option>
+			</select>
+			<div id="style-helper">
+				<div id="header" class="page-header" style="margin:0; padding:5px">
+					color: #666;<br>
+					background-color: #eff4f9;
+				</div>
+				<div id="page" class="page" style="margin:0; padding:5px">
+					color: #333;<br>
+					background-color: #fafafa;
+				</div>
+				<div id="footer" class="inverse" style="margin:0; padding:5px">
+					background-color: #2f3c48;<br>
+					color: #cae4fb;
+				</div>
+			</div>			
 		</section>
 		<section>
 			<h3>Buttons with decorations</h3>

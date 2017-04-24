@@ -32,6 +32,9 @@ input.btn{
 	color: #ffffff;
 	text-shadow: none;
 }
+.btn .glyphicon,.btn .fa{
+	line-height: inherit;
+}
 
 .btn.btn-default{
 	border-color: #ababab;

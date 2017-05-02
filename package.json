@@ -9,7 +9,6 @@
     "test": "gulp"
   },
   "devDependencies": {
-    "gulp-csso": "~1.0.16-alpha",
     "gulp-concat": "~2.6.1",
     "gulp": "~3.9.1"
   }

@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/shturec/openui5_bs_theme.svg?branch=master)](https://travis-ci.org/shturec/openui5_bs_theme)
+
 # Open UI5 Belize theme for Twitter Bootstrap 3
 The stylesheets in this theme will map standard Bootstrap classes to Open UI5 Belize theme colors, layout and measures.
  

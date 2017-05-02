@@ -1,0 +1,51 @@
+html {
+	font-size: 100%;
+	height: 100%;
+}		
+body{
+	font-family: "72-Web",Arial,Helvetica,sans-serif;
+	font-size: 1rem;
+	color: #333;
+	height: 100%;
+	width: 100%;
+	box-sizing: border-box;
+	background: linear-gradient(to bottom,#a9c6de,#e7ecf0);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+body:after {
+	content:'';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 4px;
+	z-index: 1;
+	background-color: #427cac;
+	box-shadow: 0 0 24px rgba(0,0,0,0.15);
+}
+
+h1,.h1 {
+	font-size: 1.75rem;	
+}
+h2,.h2 {
+	font-size: 1.375rem;	
+}
+h3,.h3 {
+	font-size: 1.25rem;	
+}
+h4,.h4 {
+	font-size: 1.125rem;	
+}
+h5,.h5 {
+	font-size: 1rem;	
+}
+h6,.h6 {
+	font-size: 0.875em;	
+}

@@ -1,0 +1,134 @@
+.table {
+	font-size: 1rem;
+	color: #333;
+	background-color: #fff;
+	/*table-layout: fixed;*/
+}
+
+.table > caption {
+	border-bottom: 2px solid transparent;
+	padding: 0;
+	background-color: transparent;
+	min-height: 1.5rem;
+	height: 1.7rem;
+	margin-bottom: 0.125rem;
+	width: 100%;
+	font-size: 18px;
+	color: #333;
+	font-weight: normal;
+	text-align: left;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	cursor: text;
+}
+
+.table > caption.toolbar {
+	height: 3rem;
+	padding-left:0.75rem;
+	padding-right:0.75rem;
+	vertical-align: top
+}
+
+.table > thead > tr, 
+.table > caption + thead > tr, 
+.table.table-bordered > thead > tr {
+	background-color: #f7f7f7;
+	height: 3rem;
+	min-height: 3rem;
+	border-bottom: 1px solid #e5e5e5;
+	border-top: 1px solid #e5e5e5;
+}
+
+.table:not(.table-bordered) > thead > tr:first-child:focus{
+	outline-offset: -1px;
+	outline: 1px dotted #000000;
+}
+
+.table > thead > tr:first-child >  th {
+	height: 100%;
+	min-height: 3rem;
+	background-color: #f7f7f7;
+	padding: 0 0.5rem;
+	font-size: 0.875rem;
+	line-height: 3rem;
+	text-align: left;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	vertical-align: middle;
+	font-weight: normal;
+	white-space: nowrap;
+	cursor: text;
+	border-bottom: none;
+}
+		
+.table-bordered > thead > tr:first-child >  th:hover{
+	background-color: #e8e8e8;
+}
+
+.table-bordered > thead > tr:first-child >  th:active{
+	background-color: #427cac;
+}
+
+.table-bordered > thead > tr:first-child >  th:focus{
+	outline-offset: -1px;
+	outline: 1px dotted #000000;
+}		
+
+.table > tbody > tr {
+	height: calc(3rem + 1px);
+	min-height: calc(3rem + 1px);
+}
+
+.table.table-bordered > tbody > tr > td:focus {
+	outline-offset: -1px;
+	outline: 1px dotted #000000;
+}
+
+
+.table.table-bordered.table-hover > tbody > tr:hover,
+.table.table-bordered.table-hover > tbody > tr.active,
+.table.table-bordered.table-hover > tbody > tr.active:hover,
+.table.table-bordered.table-hover > tbody > tr.active:hover > td,
+.table.table-bordered.table-hover > tbody > tr.active:hover > th{
+	background-color: #f0f0f0;
+}
+
+/* Hovering in resp. tables is disabled */
+.table:not(.table-bordered).table-hover > tbody > tr:hover {
+	background-color: #fff;
+}
+.table:not(.table-bordered).table-hover > tbody > tr.active,
+.table:not(.table-bordered).table-hover > tbody > tr.active > td,
+.table:not(.table-bordered).table-hover > tbody > tr.active > th,
+.table:not(.table-bordered).table-hover > tbody > tr.active:hover,
+.table:not(.table-bordered).table-hover > tbody > tr.active:hover > td,
+.table:not(.table-bordered).table-hover > tbody > tr.active:hover > th {
+	background-color: #f0f0f0;
+}
+
+.table:not(.table-bordered) > tbody > tr:focus {
+	outline-offset: -1px;
+	outline: 1px dotted #000000;
+}
+		
+.table > tbody > tr:focus {
+	outline-offset: -1px;
+	outline: 1px dotted #000000;
+}
+
+.table > tbody > tr.active {
+	background-color: #f0f0f0;
+}
+
+.table > tbody > tr > td,
+.table > tbody > tr > th {
+	border-bottom-color: #e5e5e5;
+	border-top-color: #e5e5e5;
+	padding: 0;
+	position: relative;
+	overflow: hidden;
+	padding: .875rem .5rem;
+	vertical-align: top;
+	font-size: 0.875rem;
+}

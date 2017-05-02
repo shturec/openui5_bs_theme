@@ -1,0 +1,16 @@
+{
+  "name": "css-theme-build",
+  "version": "0.0.1",
+  "repository": "shturec/openui5_bs_theme",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "gulp"
+  },
+  "devDependencies": {
+    "gulp-csso": "~1.0.16-alpha",
+    "gulp-concat": "~2.6.1",
+    "gulp": "~3.9.1"
+  }
+}

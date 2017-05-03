@@ -1,0 +1,317 @@
+<html>
+<head>
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css">
+	<link rel="stylesheet" href="css/buttons.css">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<style>
+		html {
+			font-size: 100%;
+		}
+		table {
+			background-color: #fafafa;
+		}
+		tr:first-child {
+			font-size: 0.9rem;
+		}
+		.table > tbody > tr > td {
+			vertical-align: middle;
+		}
+		.table > tbody > tr > td:first-child{
+			font-size: 0.9rem;
+			font-weight: bold;
+		}
+		section {
+			margin-top: 60px;
+		}
+		.page-header{
+			color: #666;
+			background-color: #eff4f9;
+		}
+		.page{
+			color: #333;
+			background-color: #fafafa;
+		}
+	</style>
+	<script>
+		$(document).ready(function(){
+			$('#style-helper div').hide('fast');
+			$('#style-helper div#page').show('medium');
+			$('#background-switch')
+			.change(function() {
+				var t = $('table').removeClass('page-header').removeClass('page').removeClass('inverse');
+				if(this.value==='#header'){
+					t.addClass('page-header');
+					$('#style-helper div').hide('fast');
+					$('#style-helper div#header').show('fast');
+				} else if(this.value==='#page'){
+					t.addClass('page');
+					$('#style-helper div').hide('fast');
+					$('#style-helper div#page').show('fast');
+				} else if(this.value==='#footer'){
+					t.addClass('inverse');
+					$('#style-helper div').hide('fast');
+					$('#style-helper div#footer').show('fast');
+				}
+			})
+		});
+	</script>	
+</head>
+<body>
+	<div class="container">
+		<div class="page-header" style="background: transparent"><h1>Buttons</h1></div>
+		<section>
+			<label>Inverse Background</label>
+			<select id="background-switch">
+				<option value="#header">Header</option>
+				<option value="#page" selected>Page</option>
+				<option value="#footer">Footer</option>
+			</select>
+			<div id="style-helper">
+				<div id="header" class="page-header" style="margin:0; padding:5px">
+					color: #666;<br>
+					background-color: #eff4f9;
+				</div>
+				<div id="page" class="page" style="margin:0; padding:5px">
+					color: #333;<br>
+					background-color: #fafafa;
+				</div>
+				<div id="footer" class="inverse" style="margin:0; padding:5px">
+					background-color: #2f3c48;<br>
+					color: #cae4fb;
+				</div>
+			</div>			
+		</section>
+		<section>
+			<h3>Buttons with decorations</h3>
+			<table class="table">
+			  <tr>
+				<th></th>
+				<th>.btn.btn-default</th>
+				<th>.btn.btn-primary</th>
+				<th>.btn.btn-success</th>
+				<th>.btn.btn-danger</th>
+				<th>.btn.btn-link</th>
+				<th>.btn.btn-link i.glyphicon</th>
+			  </tr>
+			  <tr>
+				<td>&lt;button/&gt;</td>
+				<td><button class="btn btn-default">Default</button></td>
+				<td><button class="btn btn-primary">Primary</button></td>
+				<td><button class="btn btn-success">Success</button></td>
+				<td><button class="btn btn-danger">Danger</button></td>
+				<td><button class="btn btn-link">Link</button></td>
+				<td><button class="btn btn-link"><i class="glyphicon glyphicon-pencil"></i></button></td>
+			  </tr>
+			  <tr>
+				<td>&lt;a/&gt;</td>
+				<td><a class="btn btn-default" href="#">Default</a></td>
+				<td><a class="btn btn-primary" href="#">Primary</a></td>
+				<td><a class="btn btn-success" href="#">Success</a></td>
+				<td><a class="btn btn-danger" href="#">Danger</a></td>
+				<td><a class="btn btn-link" href="#">Link</a></td>
+				<td><a class="btn btn-link" href="#"><i class="glyphicon glyphicon-pencil"></i></a></td>
+			  </tr>
+			  <tr>
+				<td>&lt;input type="button"/&gt;</td>
+				<td><input class="btn btn-default" type="button" value="Default"></td>
+				<td><input class="btn btn-primary" type="button" value="Primary"></td>
+				<td><input class="btn btn-success" type="button" value="Success"></td>
+				<td><input class="btn btn-danger" type="button" value="Danger"></td>
+				<td><input class="btn btn-link" type="button" value="Link"></td>
+				<td title="use <button type='submit'/> instead">N/A</td>
+			  </tr>
+			  <tr>
+				<td>&lt;input type="submit"/&gt;</td>
+				<td><input class="btn btn-default" type="submit" value="Default"></td>
+				<td><input class="btn btn-primary" type="submit" value="Primary"></td>
+				<td><input class="btn btn-success" type="submit" value="Success"></td>
+				<td><input class="btn btn-danger" type="submit" value="Danger"></td>
+				<td><input class="btn btn-link" type="submit" value="Link"></td>
+				<td title="use <button type='submit'/> instead">N/A</td>
+			  </tr>
+			</table>
+		</section>
+		<section>
+			<h3>Active Buttons</h3>
+			<table class="table">
+			  <tr>
+				<th></th>
+				<th>.btn.btn-default.active</th>
+				<th>.btn.btn-primary.active</th>
+				<th>.btn.btn-success.active</th>
+				<th>.btn.btn-danger.active</th>
+				<th>.btn.btn-link.active</th>
+				<th>.btn.btn-link.active i.glyphicon</th>
+			  </tr>
+			  <tr>
+				<td>&lt;button/&gt;</td>
+				<td><button class="btn btn-default active">Default</button></td>
+				<td><button class="btn btn-primary active">Primary</button></td>
+				<td><button class="btn btn-success active">Success</button></td>
+				<td><button class="btn btn-danger active">Danger</button></td>
+				<td><button class="btn btn-link active">Link</button></td>
+				<td><button class="btn btn-link active"><i class="glyphicon glyphicon-pencil"></i></button></td>
+			  </tr>
+			  <tr>
+				<td>&lt;a/&gt;</td>
+				<td><a class="btn btn-default active" href="#">Default</a></td>
+				<td><a class="btn btn-primary active" href="#">Primary</a></td>
+				<td><a class="btn btn-success active" href="#">Success</a></td>
+				<td><a class="btn btn-danger active" href="#">Danger</a></td>
+				<td><a class="btn btn-link active" href="#">Link</a></td>
+				<td><a class="btn btn-link active" href="#"><i class="glyphicon glyphicon-pencil"></i></a></td>
+			  </tr>
+			  <tr>
+				<td>&lt;input type="button"/&gt;</td>
+				<td><input class="btn btn-default active" type="button" value="Default"></td>
+				<td><input class="btn btn-primary active" type="button" value="Primary"></td>
+				<td><input class="btn btn-success active" type="button" value="Success"></td>
+				<td><input class="btn btn-danger active" type="button" value="Danger"></td>
+				<td><input class="btn btn-link active" type="button" value="Link"></td>
+				<td title="use <button type='submit'/> instead">N/A</td>
+			  </tr>
+			  <tr>
+				<td>&lt;input type="submit"/&gt;</td>
+				<td><input class="btn btn-default active" type="submit" value="Default"></td>
+				<td><input class="btn btn-primary active" type="submit" value="Primary"></td>
+				<td><input class="btn btn-success active" type="submit" value="Success"></td>
+				<td><input class="btn btn-danger active" type="submit" value="Danger"></td>
+				<td><input class="btn btn-link active" type="submit" value="Link"></td>
+				<td title="use <button type='submit'/> instead">N/A</td>
+			  </tr>
+			</table>	
+		</section>
+		<section>
+			<h3>Focused Buttons</h3>
+			<table class="table">
+			  <tr>
+				<th></th>
+				<th>.btn.btn-default.focus</th>
+				<th>.btn.btn-primary.focus</th>
+				<th>.btn.btn-success.focus</th>
+				<th>.btn.btn-danger.focus</th>
+				<th>.btn.btn-link.focus</th>
+				<th>.btn.btn-link.focus i.glyphicon</th>
+			  </tr>
+			  <tr>
+				<td>&lt;button/&gt;</td>
+				<td><button class="btn btn-default focus">Default</button></td>
+				<td><button class="btn btn-primary focus">Primary</button></td>
+				<td><button class="btn btn-success focus">Success</button></td>
+				<td><button class="btn btn-danger focus">Danger</button></td>
+				<td><button class="btn btn-link focus">Link</button></td>
+				<td><button class="btn btn-link focus"><i class="glyphicon glyphicon-pencil"></i></button></td>
+			  </tr>
+			  <tr>
+				<td>&lt;a/&gt;</td>
+				<td><a class="btn btn-default focus" href="#">Default</a></td>
+				<td><a class="btn btn-primary focus" href="#">Primary</a></td>
+				<td><a class="btn btn-success focus" href="#">Success</a></td>
+				<td><a class="btn btn-danger focus" href="#">Danger</a></td>
+				<td><a class="btn btn-link focus" href="#">Link</a></td>
+				<td><a class="btn btn-link focus" href="#"><i class="glyphicon glyphicon-pencil"></i></button></td>
+			  </tr>
+			  <tr>
+				<td>&lt;input type="button"/&gt;</td>
+				<td><input class="btn btn-default focus" type="button" value="Default"></td>
+				<td><input class="btn btn-primary focus" type="button" value="Primary"></td>
+				<td><input class="btn btn-success focus" type="button" value="Success"></td>
+				<td><input class="btn btn-danger focus" type="button" value="Danger"></td>
+				<td><input class="btn btn-link focus" type="button" value="Link"></td>
+				<td title="use <button type='submit'/> instead">N/A</td>
+			  </tr>
+			  <tr>
+				<td>&lt;input type="submit"/&gt;</td>
+				<td><input class="btn btn-default focus" type="submit" value="Default"></td>
+				<td><input class="btn btn-primary focus" type="submit" value="Primary"></td>
+				<td><input class="btn btn-success focus" type="submit" value="Success"></td>
+				<td><input class="btn btn-danger focus" type="submit" value="Danger"></td>
+				<td><input class="btn btn-link focus" type="submit" value="Link"></td>
+				<td title="use <button type='submit'/> instead">N/A</td>
+			  </tr>
+			</table>
+			<span class="small">Note: Anchor tags without href attribute do not have outline. Keep in mind if you construct your button using the &lt;a&gt; tag option.</span>
+		</section>
+		<section>
+			<h3>Disabled Buttons</h3>
+			<table class="table">
+			  <tr>
+				<th></th>
+				<th>.btn.btn-default.disabled</th>
+				<th>.btn.btn-default[disabled]</th>
+				<th>.btn.btn-primary.disabled</th>
+				<th>.btn.btn-primary[disabled]</th>
+				<th>.btn.btn-success.disabled</th>
+				<th>.btn.btn-success[disabled]</th>
+				<th>.btn.btn-danger.disabled</th>
+				<th>.btn.btn-danger[disabled]</th>
+				<th>.btn.btn-link.disabled</th>
+				<th>.btn.btn-link[disabled]</th>
+				<th>.btn.btn-link.disabled i.glyphicon</th>
+				<th>.btn.btn-link[disabled] i.glyphicon</th>
+			  </tr>
+			  <tr>
+				<td>&lt;button/&gt;</td>
+				<td>N/A</td>
+				<td><button class="btn btn-default" disabled="disabled">Default</button></td>
+				<td>N/A</td>
+				<td><button class="btn btn-primary" disabled>Primary</button></td>
+				<td>N/A</td>
+				<td><button class="btn btn-success" disabled>Success</button></td>
+				<td>N/A</td>
+				<td><button class="btn btn-danger" disabled>Danger</button></td>
+				<td>N/A</td>
+				<td><button class="btn btn-link" disabled>Link</button></td>
+				<td>N/A</td>
+				<td><button class="btn btn-link" disabled><i class="glyphicon glyphicon-pencil"></i></button></td>
+			  </tr>
+			  <tr>
+				<td>&lt;a/&gt;</td>
+				<td><a class="btn btn-default disabled" href="#">Default</a></td>
+				<td>N/A</td>
+				<td><a class="btn btn-primary disabled" href="#">Primary</a></td>
+				<td>N/A</td>
+				<td><a class="btn btn-success disabled" href="#">Success</a></td>
+				<td>N/A</td>
+				<td><a class="btn btn-danger disabled" href="#">Danger</a></td>
+				<td>N/A</td>
+				<td><a class="btn btn-link disabled" href="#">Link</a></td>
+				<td>N/A</td>
+				<td><a class="btn btn-link disabled" href="#"><i class="glyphicon glyphicon-pencil"></i></a></td>
+				<td>N/A</td>
+			  </tr>
+			  <tr>
+				<td>&lt;input type="button"/&gt;</td>
+				<td>N/A</td>
+				<td><input class="btn btn-default" disabled type="button" value="Default"></td>
+				<td>N/A</td>
+				<td><input class="btn btn-primary" disabled type="button" value="Primary"></td>
+				<td>N/A</td>
+				<td><input class="btn btn-success" disabled type="button" value="Success"></td>
+				<td>N/A</td>
+				<td><input class="btn btn-danger" disabled type="button" value="Danger"></td>
+				<td>N/A</td>
+				<td><input class="btn btn-link" disabled type="button" value="Link"></td>
+				<td>N/A</td>
+				<td>N/A</td>
+			  </tr>
+			  <tr>
+				<td>&lt;input type="submit"/&gt;</td>
+				<td>N/A</td>
+				<td><input class="btn btn-default" disabled type="submit" value="Default"></td>
+				<td>N/A</td>
+				<td><input class="btn btn-primary" disabled type="submit" value="Primary"></td>
+				<td>N/A</td>
+				<td><input class="btn btn-success" disabled type="submit" value="Success"></td>
+				<td>N/A</td>
+				<td><input class="btn btn-danger" disabled type="submit" value="Danger"></td>
+				<td>N/A</td>
+				<td><input class="btn btn-link" disabled type="submit" value="Link"></td>
+				<td title="use <button type='submit' disabled/> instead">N/A</td>
+				<td title="use <button type='submit' disabled/> instead">N/A</td>
+			  </tr>
+			</table>
+		</section>
+	</div>
+</body>
+</html>

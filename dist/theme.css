@@ -900,3 +900,199 @@ body:after {
   vertical-align: top;
   font-size: 0.875rem;
 }
+.form-horizontal {
+  padding: 15px;
+}
+
+@media (max-width: 768px) {
+  .form-group .col-xs-1:not(label),
+  .form-group .col-sm-1:not(label),
+  .form-group .col-xs-2:not(label),
+  .form-group .col-sm-2:not(label),
+  .form-group .col-xs-3:not(label),
+  .form-group .col-sm-3:not(label),
+  .form-group .col-xs-4:not(label),
+  .form-group .col-sm-4:not(label),
+  .form-group .col-xs-5:not(label),
+  .form-group .col-sm-5:not(label),
+  .form-group .col-md-5:not(label),
+  .form-group .col-xs-6:not(label),
+  .form-group .col-sm-6:not(label),
+  .form-group .col-xs-7:not(label),
+  .form-group .col-sm-7:not(label),
+  .form-group .col-xs-8:not(label),
+  .form-group .col-sm-8:not(label),
+  .form-group .col-xs-9:not(label),
+  .form-group .col-sm-9:not(label),
+  .form-group .col-xs-10:not(label),
+  .form-group .col-sm-10:not(label),
+  .form-group .col-xs-11:not(label),
+  .form-group .col-sm-11:not(label),
+  .form-group .col-xs-12:not(label),
+  .form-group .col-sm-12:not(label) {
+    margin-top: 2px;
+    margin-bottom: 12px;
+  }
+}
+
+@media (min-width: 768px) {
+  .form-horizontal .control-label {
+    padding-top: initial;
+    margin-bottom: initial;
+    text-align: end;
+  }
+
+  .form-group {
+    display: flex;
+  }
+}
+
+.form-group .col-xs-1,
+.form-group .col-sm-1,
+.form-group .col-md-1,
+.form-group .col-lg-1,
+.form-group .col-xs-2,
+.form-group .col-sm-2,
+.form-group .col-md-2,
+.form-group  .col-lg-2,
+.form-group .col-xs-3,
+.form-group .col-sm-3,
+.form-group .col-md-3,
+.form-group .col-lg-3,
+.form-group .col-xs-4,
+.form-group .col-sm-4,
+.form-group .col-md-4,
+.form-group col-lg-4,
+.form-group .col-xs-5,
+.form-group .col-sm-5,
+.form-group .col-md-5,
+.form-group .col-lg-5,
+.form-group .col-xs-6,
+.form-group .col-sm-6,
+.form-group .col-md-6,
+.form-group .col-lg-6,
+.form-group .col-xs-7,
+.form-group .col-sm-7,
+.form-group .col-md-7,
+.form-group .col-lg-7,
+.form-group .col-xs-8,
+.form-group .col-sm-8,
+.form-group .col-md-8,
+.form-group .col-lg-8,
+.form-group .col-xs-9,
+.form-group .col-sm-9,
+.form-group .col-md-9,
+.form-group .col-lg-9,
+.form-group .col-xs-10,
+.form-group .col-sm-10,
+.form-group .col-md-10,
+.form-group .col-lg-10,
+.form-group .col-xs-11,
+.form-group .col-sm-11,
+.form-group .col-md-11,
+.form-group .col-lg-11,
+.form-group .col-xs-12,
+.form-group .col-sm-12,
+.form-group .col-md-12,
+.form-group .col-lg-12 {
+  padding-right: 4px;
+  padding-left: 4px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+.form-group {
+  margin-bottom: 0;
+  line-height: initial;
+}
+
+.form-horizontal .form-group {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.form-control {
+  margin: 0.25 0;
+  height: 2.5rem;
+  color: #000;
+  background: #fff;
+  border: 1px solid #bfbfbf;
+  -webkit-appearance: none;
+  border-radius: 0;
+  vertical-align: top;
+  font-size: 0.875rem;
+  line-height: normal;
+  padding: 0 0.75rem;
+  box-shadow: none;
+}
+
+.form-control:not([disabled]):hover {
+  background: #fff;
+  border-color: #427cac;
+}
+
+.form-control:focus {
+  outline: 1px dotted #000000;
+  outline-offset: -3px;
+  border-color: #427cac;
+  box-shadow: none;
+}
+
+form .control-label:after,
+.form-inline .control-label:after,
+.form-horizontal .control-label:after {
+  content: ':';
+}
+
+label.control-label {
+  align-self: center;
+  margin: 0.2rem 0;
+  padding-top: 0;
+  padding-right: 0;
+  color: #666666;
+  font-size: 0.875rem;
+  font-weight: normal;
+  display: inline-block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: text;
+}
+
+form legend,
+.form-inline legend,
+.form-horizontal legend {
+  font-size: 1.125rem;
+  border: none;
+  margin-bottom: 15px;
+}
+
+form h1,
+form h2,
+form h3,
+form h4,
+form h5,
+form h6 {
+  padding: 0 1rem;
+  border-bottom: 1px solid #ccc;
+  color: #333;
+  height: 3rem;
+  line-height: 3rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.form-control-static {
+  font-size: 0.875rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  min-height: initial;
+}
+
+.radio label,
+.checkbox label {
+  padding-left: 0;
+}

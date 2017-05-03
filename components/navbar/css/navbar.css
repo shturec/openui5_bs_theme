@@ -1,0 +1,167 @@
+body:after{
+	content: '';
+	display: none;
+}
+
+.navbar.navbar-default.navbar-fixed-top {
+	font-size: 1rem;
+	color: #346187;
+	line-height: 2.875rem;
+	position: absolute;
+	/*top: 4px;*/
+	height: 2.875rem;
+	min-height: 2.875rem;
+	overflow-y: initial;
+	background-color: transparent;
+	margin-bottom: 0;
+	border:none;
+	border-color: transparent;
+}
+
+@media(min-width: 768px){
+	.navbar.navbar-default.navbar-fixed-top .navbar-header,
+	.navbar.navbar-default.navbar-fixed-top .navbar-nav,
+	.navbar.navbar-default.navbar-fixed-top .navbar-form {
+		height: 100%;
+		line-height: 2.25rem;
+		margin: 0;
+	}
+	.navbar.navbar.navbar-default.navbar-fixed-top .navbar-collapse.collapse.in{
+		border-color: transparent;
+		background-color: transparent;
+		box-shadow: none;
+	}
+}
+
+.navbar.navbar-default.navbar-fixed-top .navbar-toggle {
+	height: 2.5rem;
+	color: #346187;
+	text-decoration: none;			
+	border-color: transparent;
+	margin: 0.25rem;
+	padding: 0 0.5rem;
+	border-radius: 0.2rem;
+}
+
+.navbar.navbar-default.navbar-fixed-top .navbar-header .navbar-brand,
+.navbar.navbar-default.navbar-fixed-top .navbar-header .navbar-text,
+.navbar.navbar-default.navbar-fixed-top .navbar-header .navbar-link,
+.navbar.navbar-default.navbar-fixed-top .navbar-header .navbar-btn,
+.navbar.navbar-default.navbar-fixed-top .navbar-header .btn,
+.navbar.navbar-default.navbar-fixed-top .navbar-nav > li > a,
+.navbar.navbar-default.navbar-fixed-top .navbar-nav .navbar-brand,
+.navbar.navbar-default.navbar-fixed-top .navbar-nav .navbar-text,
+.navbar.navbar-default.navbar-fixed-top .navbar-nav .navbar-link,
+.navbar.navbar-default.navbar-fixed-top .navbar-nav .navbar-btn,
+.navbar.navbar-default.navbar-fixed-top .navbar-nav .btn{
+	height: 2.5rem;
+	color: #346187;
+	text-decoration: none;			
+	border-color: transparent;
+	margin: 0.25rem;
+	padding: 0 0.5rem;
+	border-radius: 0.2rem;
+	/*display: inline-block;*/
+}
+
+.navbar.navbar-default.navbar-fixed-top .navbar-header .fa,
+.navbar.navbar-default.navbar-fixed-top .navbar-nav > li .fa{
+	line-height: 2.35rem;
+	font-size: 1.125rem;
+}
+
+.navbar.navbar-default.navbar-fixed-top .navbar-toggle:not([aria-expanded="true"]):not(.active):not(:active):hover, 
+.navbar.navbar-default.navbar-fixed-top .navbar-header button:not(.active):not(:active):not([aria-expanded="true"]):hover, 
+.navbar.navbar-default.navbar-fixed-top .navbar-header a:not(.active):not(:active):hover,
+.navbar.navbar-default.navbar-fixed-top .navbar-nav > li button:not(.active):not(:active):hover,
+.navbar.navbar-default.navbar-fixed-top .navbar-nav > li a:not(.active):not(:active):hover {
+	color: #346187;
+	background-color: rgba(52,97,135,0.15);
+	border-color: transparent;
+}
+
+.navbar.navbar-default.navbar-fixed-top .navbar-toggle:focus, 
+.navbar.navbar-default.navbar-fixed-top .navbar-nav > li > a:focus {
+	outline: 0.0625rem dotted #333333;
+	background-color: transparent;
+}
+
+.navbar.navbar-default.navbar-fixed-top .navbar-nav > .active > a,
+.navbar.navbar-default.navbar-fixed-top .navbar-nav > li:active > a,
+.navbar.navbar-default.navbar-fixed-top .navbar-nav > li button.active,
+.navbar.navbar-default.navbar-fixed-top .navbar-nav > li button:active,
+.navbar.navbar-default.navbar-fixed-top .navbar-nav > li a.active,
+.navbar.navbar-default.navbar-fixed-top .navbar-nav > li a:active,
+.navbar.navbar-default.navbar-fixed-top .navbar-nav > li > a:active
+.navbar.navbar-default.navbar-fixed-top .navbar-nav > li > a.active,
+.navbar.navbar-default.navbar-fixed-top .navbar-nav > li > a:active:focus,
+.navbar.navbar-default.navbar-fixed-top .navbar-nav > li > a.active:focus,
+.navbar.navbar-default.navbar-fixed-top .navbar-nav > li > a.focus:active,
+.navbar.navbar-default.navbar-fixed-top .navbar-toggle[aria-expanded="true"],
+.navbar.navbar-default.navbar-fixed-top .navbar-toggle:active, 
+.navbar.navbar-default.navbar-fixed-top .navbar-header button.active, 
+.navbar.navbar-default.navbar-fixed-top .navbar-header button:active, 
+.navbar.navbar-default.navbar-fixed-top .navbar-header a.active,
+.navbar.navbar-default.navbar-fixed-top .navbar-header a:active,
+.navbar.navbar-default.navbar-fixed-top .navbar-nav > .open > a, 
+.navbar.navbar-default.navbar-fixed-top .navbar-nav > .open > a:focus, 
+.navbar.navbar-default.navbar-fixed-top .navbar-nav > .open > a:hover{
+	color: #fff;
+	background-color: #2a4f6d;
+	text-shadow: none;
+}
+
+.navbar.navbar-default.navbar-fixed-top .navbar-nav > li > a:active > .fa {
+	color: #fff;
+}
+
+.navbar.navbar-default.navbar-fixed-top .navbar-toggle .icon-bar {
+	background-color: #346187;
+}
+
+.navbar.navbar-default.navbar-fixed-top .navbar-toggle[aria-expanded="true"] .icon-bar,
+.navbar.navbar-default.navbar-fixed-top .navbar-toggle:active .icon-bar {
+	background-color: #fff;
+}
+				
+.navbar.navbar-default.navbar-fixed-top .navbar-brand, 
+.navbar.navbar-default.navbar-fixed-top .navbar-nav > li > a {
+	text-shadow: 0 1px 0 rgba(255,255,255,.25);
+	line-height: 2.5rem;
+}
+
+.navbar.navbar-default.navbar-fixed-top .navbar-nav > li > .navbar-brand {
+	border-radius: 0.2rem;
+	width: initial;
+	font-size: 1rem;
+	line-height: 2.5rem;
+}
+
+.navbar.navbar-default.navbar-fixed-top .navbar-nav > li > .navbar-brand:not(:link):hover,
+.navbar.navbar-default.navbar-fixed-top .navbar-nav > li > .navbar-brand:not(:link):focus, 
+.navbar.navbar-default.navbar-fixed-top .navbar-nav > li > .navbar-brand:not(:link):active{
+	background-color: transparent;
+	color: #346187;
+	text-decoration: none;
+}
+		
+.navbar.navbar.navbar-default.navbar-fixed-top .navbar-collapse.collapse.in{
+	border-color: transparent;
+	background-color: #fff;
+	box-shadow: 0 0 24px rgba(0,0,0,0.15);
+}
+
+.navbar.navbar-default.navbar-fixed-top .nav.navbar-nav,
+.navbar.navbar-default.navbar-fixed-top .nav.navbar-nav.navbar-left,
+.navbar.navbar-default.navbar-fixed-top .nav.navbar-nav.navbar-right{
+	margin-left: initial;
+}
+
+.navbar.navbar-default.navbar-fixed-top .nav.navbar-nav.navbar-right{
+	margin-right: initial;
+}
+
+.navbar.navbar-default.navbar-fixed-top+.container,
+.navbar.navbar-default.navbar-fixed-top+.container-fluid {
+	margin-top: 48px;
+}

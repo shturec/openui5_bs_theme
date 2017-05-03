@@ -1,0 +1,73 @@
+<html>
+<head>
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css">
+	<link rel="stylesheet" href="css/forms.css">
+	<link rel="stylesheet" href="../common/common.css">	
+	<script src="//code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<style>
+		/* Override some style properties from coommon.css */
+		body {
+			color: #333 !important;
+			background: none !important;
+			background-color: #fafafa !important;
+			overflow: auto !important;
+		}
+		body:after{
+			height: 0 !important;
+		}
+		section{
+			padding: 40px 0;
+		}
+		section>h3{
+			border-bottom: 1px solid #ccc;
+			margin-bottom: 40px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container" style="overflow-y:auto">
+		<div class="page-header" style="background: transparent"><h1>Forms</h1></div>
+		<section>
+			<h3>Horizontal Form in Edit Mode</h3>
+			<form class="form-horizontal">
+			  <fieldset>
+				<legend><h4>Login Credentials</h4></legend>
+				<div class="form-group">
+					<label for="inputEmail3" class="col-sm-3 control-label">Email</label>
+					<div class="col-sm-5">
+					  <input type="email" class="form-control" id="inputEmail3" placeholder="Email" value="john.doe@nowhere.com">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="inputPassword3" class="col-sm-3 control-label">Password</label>
+					<div class="col-sm-5">
+					  <input type="password" class="form-control" id="inputPassword3" placeholder="Password" value="123">
+					</div>
+				</div>
+			</form>
+		</section>
+		<section>
+			<h3>Horizontal Form in View Mode</h3>
+			<form class="form-horizontal">
+			  <fieldset>
+				<legend><h4>Login Credentials</h4></legend>
+				<div class="form-group">
+					<label for="inputEmail3" class="col-sm-3 control-label">Email</label>
+					<div class="col-sm-5 form-control-static">
+					  <span id="inputEmail3" >john.doe@nowhere.com</span>
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="inputPassword3" class="col-sm-3 control-label">Password</label>
+					<div class="col-sm-5 form-control-static">
+					  <span id="inputPassword3">***</span>
+					</div>
+				</div>
+			  </fieldset>
+			</form>		
+		</section>
+	</div>
+</body>
+</html>

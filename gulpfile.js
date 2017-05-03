@@ -4,7 +4,7 @@ var csso = require('gulp-csso');
 var rename = require("gulp-rename");
 
 gulp.task('concat_css', function(){
-	return gulp.src(['./common/**/*.css','./shell/**/*.css', './buttons/**/*.css','./navbar/**/*.css','./tables/**/*.css'])
+	return gulp.src(['./css/common/**/*.css','./css/shell/**/*.css', './css/buttons/**/*.css','./components/navbar/**/*.css','./css/tables/**/*.css',,'./css/forms/**/*.css'])
 			.pipe(concatCss("theme.css"))
 			.pipe(gulp.dest('./dist'))
 });

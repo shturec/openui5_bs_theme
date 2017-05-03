@@ -2,12 +2,22 @@
 
 # Open UI5 Belize theme for Twitter Bootstrap 3
 The stylesheets in this theme will map standard Bootstrap classes to Open UI5 Belize theme colors, layout and measures.
- 
-## Buttons 
-[Live Preview](http://htmlpreview.github.io/?https://github.com/shturec/openui5_bs_theme/blob/master/css/buttons/buttons.html)
-## Shell 
-[Live Preview](http://htmlpreview.github.io/?https://github.com/shturec/openui5_bs_theme/blob/master/shell/shell.html)
+
+## Components
+
 ## Navbar 
-[Live Preview](http://htmlpreview.github.io/?https://github.com/shturec/openui5_bs_theme/blob/master/navbar/navbar.html)
+[Live Preview](http://htmlpreview.github.io/?https://github.com/shturec/openui5_bs_theme/blob/master/components/navbar/navbar.html)
+
+## CSS
+
+## Shell 
+[Live Preview](http://htmlpreview.github.io/?https://github.com/shturec/openui5_bs_theme/blob/master/css/shell/shell.html)
+
+### Forms 
+[Live Preview](http://htmlpreview.github.io/?https://github.com/shturec/openui5_bs_theme/blob/master/css/forms/forms.html)
+
 ## Tables
-[Live Preview](http://htmlpreview.github.io/?https://github.com/shturec/openui5_bs_theme/blob/master/tables/tables.html)
+[Live Preview](http://htmlpreview.github.io/?https://github.com/shturec/openui5_bs_theme/blob/master/css/tables/tables.html)
+
+### Buttons 
+[Live Preview](http://htmlpreview.github.io/?https://github.com/shturec/openui5_bs_theme/blob/master/css/buttons/buttons.html)

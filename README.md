@@ -5,18 +5,19 @@ The stylesheets in this theme will map standard Bootstrap classes to Open UI5 Be
 
 ## Components
 
-## Navbar 
+### Navbar 
 [Live Preview](http://htmlpreview.github.io/?https://github.com/shturec/openui5_bs_theme/blob/master/components/navbar/navbar.html)
+
 
 ## CSS
 
-## Shell 
+### Shell 
 [Live Preview](http://htmlpreview.github.io/?https://github.com/shturec/openui5_bs_theme/blob/master/css/shell/shell.html)
 
 ### Forms 
 [Live Preview](http://htmlpreview.github.io/?https://github.com/shturec/openui5_bs_theme/blob/master/css/forms/forms.html)
 
-## Tables
+### Tables
 [Live Preview](http://htmlpreview.github.io/?https://github.com/shturec/openui5_bs_theme/blob/master/css/tables/tables.html)
 
 ### Buttons 

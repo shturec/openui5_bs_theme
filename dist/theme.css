@@ -933,17 +933,60 @@ body:after {
     margin-top: 2px;
     margin-bottom: 12px;
   }
+
+  .form-group .col-xs-1.form-control-static,
+  .form-group .col-sm-1.form-control-static,
+  .form-group .col-xs-2.form-control-static,
+  .form-group .col-sm-2.form-control-static,
+  .form-group .col-xs-3.form-control-static,
+  .form-group .col-sm-3.form-control-static,
+  .form-group .col-xs-4.form-control-static,
+  .form-group .col-sm-4.form-control-static,
+  .form-group .col-xs-5.form-control-static,
+  .form-group .col-sm-5.form-control-static,
+  .form-group .col-md-5.form-control-static,
+  .form-group .col-xs-6.form-control-static,
+  .form-group .col-sm-6.form-control-static,
+  .form-group .col-xs-7.form-control-static,
+  .form-group .col-sm-7.form-control-static,
+  .form-group .col-xs-8.form-control-static,
+  .form-group .col-sm-8.form-control-static,
+  .form-group .col-xs-9.form-control-static,
+  .form-group .col-sm-9.form-control-static,
+  .form-group .col-xs-10.form-control-static,
+  .form-group .col-sm-10.form-control-static,
+  .form-group .col-xs-11.form-control-static,
+  .form-group .col-sm-11.form-control-static,
+  .form-group .col-xs-12.form-control-static,
+  .form-group .col-sm-12.form-control-static {
+    margin-top: 2px;
+    margin-bottom: 12px;
+  }
+
+  .form-horizontal .radio,
+  .form-horizontal .checkbox {
+    padding-top: 0;
+  }
 }
 
 @media (min-width: 768px) {
   .form-horizontal .control-label {
-    padding-top: initial;
     margin-bottom: initial;
     text-align: end;
+    padding-top: 0.75rem;
   }
 
   .form-group {
     display: flex;
+  }
+
+  .form-horizontal .form-group .form-control-static {
+    margin-top: 0.875rem;
+  }
+
+  .form-horizontal .radio,
+  .form-horizontal .checkbox {
+    padding-top: 0.7rem;
   }
 }
 
@@ -1019,7 +1062,6 @@ body:after {
   color: #000;
   background: #fff;
   border: 1px solid #bfbfbf;
-  -webkit-appearance: none;
   border-radius: 0;
   vertical-align: top;
   font-size: 0.875rem;
@@ -1028,7 +1070,19 @@ body:after {
   box-shadow: none;
 }
 
-.form-control:not([disabled]):hover {
+.form-control[disabled],
+fieldset[disabled] .form-control {
+  cursor: default;
+  background-color: #fff;
+  opacity: 0.5;
+}
+
+.form-control[readonly] {
+  border-color: #ccc;
+  background-color: rgba(242,242,242,0.5);
+}
+
+.form-control:not([disabled]):not([readonly]):hover {
   background: #fff;
   border-color: #427cac;
 }
@@ -1046,10 +1100,8 @@ form .control-label:after,
   content: ':';
 }
 
-label.control-label {
-  align-self: center;
+.form-horizontal .control-label {
   margin: 0.2rem 0;
-  padding-top: 0;
   padding-right: 0;
   color: #666666;
   font-size: 0.875rem;
@@ -1092,7 +1144,30 @@ form h6 {
   min-height: initial;
 }
 
+.form-horizontal .radio,
+.form-horizontal .checkbox {
+  padding-left: 20px;
+}
+
 .radio label,
 .checkbox label {
   padding-left: 0;
+}
+
+input[type="radio"][disabled],
+input[type="checkbox"][disabled],
+input[type="radio"].disabled,
+input[type="checkbox"].disabled,
+fieldset[disabled] input[type="radio"],
+fieldset[disabled] input[type="checkbox"],
+.radio[disabled] label,
+.checkbox[disabled] label {
+  cursor: default;
+}
+
+textarea.form-control {
+  padding: 0.625rem 0.75rem;
+  resize: none;
+  max-height: calc(100vh - 6rem);
+  overflow: hidden;
 }
